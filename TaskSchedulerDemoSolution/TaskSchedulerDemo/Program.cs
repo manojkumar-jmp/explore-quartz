@@ -21,7 +21,8 @@ namespace TaskSchedulerDemo
             // IScheduler scheduler = await MultipleJobs.ScheduleMultipleJobs();
             // IScheduler scheduler = await PassingDataToJobs.ScheduleJobsWithData();
             // IScheduler scheduler = await ListenerDemo.ScheduleListenerDemo();
-             IScheduler scheduler = await ExceptionHandling.ScheduleExceptionHandlingDemo();
+            // IScheduler scheduler = await ExceptionHandling.ScheduleExceptionHandlingDemo();
+            IScheduler scheduler = await RetryingJobDemo.RetryJobDemo(); // Need to revisit 
 
             Console.WriteLine("Press any key to close...");
             Console.ReadKey();

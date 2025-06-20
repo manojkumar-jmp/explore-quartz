@@ -73,6 +73,7 @@
     <Compile Include="Jobs\FailingJob.cs" />
     <Compile Include="Jobs\HelloJob.cs" />
     <Compile Include="Jobs\ReportJob.cs" />
+    <Compile Include="Jobs\RetryingJob.cs" />
     <Compile Include="Listeners\GlobalJobListener.cs" />
     <Compile Include="Listeners\HelloJobListener.cs" />
     <Compile Include="Listeners\HelloSchedulerListener.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="Topics\ListenerDemo.cs" />
     <Compile Include="Topics\MultipleJobs.cs" />
     <Compile Include="Topics\PassingDataToJobs.cs" />
+    <Compile Include="Topics\RetryingJobDemo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
