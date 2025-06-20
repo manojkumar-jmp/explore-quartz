@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Quartz;
+using Quartz.Impl;
+using TaskSchedulerDemo.Jobs;
+using TaskSchedulerDemo.Listeners;
+using TaskSchedulerDemo.Topics;
+
+namespace TaskSchedulerDemo
+{
+
+    internal class Program
+    {
+        static async Task Main(string[] args)
+        {
+
+            // IScheduler scheduler = await HelloScheduler.SayHelloScheduler();
+            // IScheduler scheduler = await MultipleJobs.ScheduleMultipleJobs();
+            // IScheduler scheduler = await PassingDataToJobs.ScheduleJobsWithData();
+            // IScheduler scheduler = await ListenerDemo.ScheduleListenerDemo();
+             IScheduler scheduler = await ExceptionHandling.ScheduleExceptionHandlingDemo();
+
+            Console.WriteLine("Press any key to close...");
+            Console.ReadKey();
+
+            // If you pass false, the scheduler will stop immediately, possibly interrupting running jobs
+            if (!scheduler.IsShutdown)
+                await scheduler.Shutdown(waitForJobsToComplete: true);
+        }
+    }
+}
