@@ -75,14 +75,14 @@ Installation
      IScheduler scheduler = await ExceptionHandling.ScheduleExceptionHandlingDemo();
   ```
 
-  - Retrying Job Demo <br>
+- Retrying Job Demo <br>
    Configure a job to retry on failure
 
    ```csharp
      IScheduler scheduler = await RetryingJobDemo.RetryJobDemo();
   ```
 
-  - Stateful Job Demo <br>
+- Stateful Job Demo <br>
     Demonstrate jobs that maintain state between runs.
 
     ```csharp
