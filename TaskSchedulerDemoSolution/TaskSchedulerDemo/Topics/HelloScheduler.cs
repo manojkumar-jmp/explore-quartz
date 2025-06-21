@@ -20,7 +20,7 @@ namespace TaskSchedulerDemo.Topics
 
             // 4. Define the job and tie it to our HelloJob class
             IJobDetail job = JobBuilder.Create<HelloJob>()
-                .WithIdentity("helloJob", "group1")
+                .WithIdentity(name: "helloJob", group: "group1")
                 .Build();
 
             // 5. Create a trigger that fires now and then every 10 seconds

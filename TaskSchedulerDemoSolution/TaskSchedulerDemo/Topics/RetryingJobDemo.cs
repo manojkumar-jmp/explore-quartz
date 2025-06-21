@@ -23,7 +23,7 @@ namespace TaskSchedulerDemo.Topics
                 .StartNow()
                 .WithSimpleSchedule(x => x
                     .WithIntervalInSeconds(5)
-                    .RepeatForever())
+                    .WithRepeatCount(3))
                 .Build();
 
             await scheduler.ScheduleJob(job, trigger);

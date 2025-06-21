@@ -9,6 +9,11 @@ namespace TaskSchedulerDemo.Topics
     {
         public static async Task<IScheduler> ScheduleJobsWithData()
         {
+            /*
+             * Triggers can also have JobDataMaps associated with them. 
+             * This can be useful in the case where you have a Job that is stored in the scheduler for regular/repeated use by multiple Triggers, 
+             * yet with each independent triggering, you want to supply the Job with different data inputs.
+             */
             ISchedulerFactory schedulerFactory = new StdSchedulerFactory();
             IScheduler scheduler = await schedulerFactory.GetScheduler();
             await scheduler.Start();
