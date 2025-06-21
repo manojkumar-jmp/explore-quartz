@@ -1,4 +1,4 @@
-# Explote Quartz: Sample Project for Quartz.NET Tutorials
+# Explore Quartz: Sample Project for Quartz.NET Tutorials
 
 A demonstration project showcasing how to schedule jobs (tasks or pieces of work) to run at specified times or intervals, similar to how Windows Task Scheduler or cron jobs work using Quartz.NET an open-source, full-featured job scheduling library for .NET applications.
 
