@@ -17,7 +17,8 @@ namespace TaskSchedulerDemo
             // IScheduler scheduler = await MultipleTrigger.RunMultipleTriggers();
             // IScheduler scheduler = await ListenerDemo.ScheduleListenerDemo();
             // IScheduler scheduler = await ExceptionHandling.ScheduleExceptionHandlingDemo();
-            IScheduler scheduler = await RetryingJobDemo.RetryJobDemo(); // Need to revisit 
+            IScheduler scheduler = await RetryingJobDemo.RetryJobDemo();
+            // IScheduler scheduler = await StatefulJobDemo.RunStatefulJobDemo();
 
             Console.WriteLine("Press any key to close...");
             Console.ReadKey();
