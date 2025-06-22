@@ -41,22 +41,23 @@ Installation
 - Hello Scheduler <br>
   Basic usage of Quartz.NET to schedule and run a simple job.
   
-```csharp
-  IScheduler scheduler = await HelloScheduler.SayHelloScheduler();
-```
+   ```csharp
+     IScheduler scheduler = await HelloScheduler.SayHelloScheduler();
+   ```
 
 - Multiple Jobs <br>
   Schedule and run multiple jobs.
-  
-```csharp
-    IScheduler scheduler = await MultipleJobs.ScheduleMultipleJobs();
-```
+   
+  ```csharp
+      IScheduler scheduler = await MultipleJobs.ScheduleMultipleJobs();
+  ```
+
 - Passing Data to Jobs <br>
   Pass parameters/data to jobs.
   
-```csharp
-    IScheduler scheduler = await PassingDataToJobs.ScheduleJobsWithData();
-```
+  ```csharp
+      IScheduler scheduler = await PassingDataToJobs.ScheduleJobsWithData();
+  ```
 
 - Multiple Triggers <br>
   Use multiple triggers for a single job.
