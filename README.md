@@ -62,7 +62,7 @@ Installation
      IScheduler scheduler = await MultipleTrigger.RunMultipleTriggers();
   ```
 
-  - Listener Demo <br>
+- Listener Demo <br>
    Add listeners to respond to job/trigger events.
 
   ```csharp
